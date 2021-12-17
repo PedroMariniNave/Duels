@@ -1,0 +1,7 @@
+name: Duels
+description: Only a simple 1v1 plugin.
+version: 1.0
+api-version: 1.8
+softdepend:
+  - Legendchat
+main: com.zpedroo.duels.Duels

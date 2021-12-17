@@ -1,0 +1,85 @@
+MySQL:
+  enabled: false
+  host: 'localhost'
+  database: 'db'
+  username: 'user'
+  password: 'pass'
+  port: 3306
+
+Settings:
+  commands:
+    main:
+      command: x1
+      aliases: [duel, duelar, duelo]
+    myth:
+      command: mito
+      aliases: []
+  save-interval: 600 # em segundos
+  expire-time: 60 # em segundos
+  finish-time: 30 # em segundos
+  myth:
+    tag: '&5[Mito]'
+    name: 'zPG0D'
+
+Whitelisted-Commands:
+  - 'g'
+  - 'global'
+  - 'l'
+  - 'local'
+  - 'sc'
+  - 'tell'
+  - 'ally'
+  - '.'
+
+Messages:
+  blacklisted-command: '&cVocê não pode executar esse comando enquanto estiver em um duelo!'
+  invalid-location: '&cAlguma localização não foi definida!'
+  invite-yourself: '&cVocê não pode se desafiar!'
+  nothing-to-accept: '&cVocê não possui nenhum convite de duelo pendente para aceitar!'
+  nothing-to-refuse: '&cVocê não possui nenhum convite de duelo pendente para negar!'
+  offline-player: '&cEsse jogador está offline!'
+  happening-duel: '&cUm duelo está ocorrendo ou há um convite pendente! Aguarde alguns segundos e tente novamente.'
+  broadcast-duel:
+    - ''
+    - '&7O jogador &f{inviter} &7convidou &f{invited} &7para um duelo!'
+    - '&7Ele tem &f{expire} &7segundos para aceitar.'
+    - ''
+  player-invited:
+    - ''
+    - '&7Você foi convidado para um duelo por &f{inviter}&7!'
+    - '&7Para aceitar, digite &f/duelo aceitar&7.'
+    - '&7O convite expira em &f{expire} &7segundos.'
+    - ''
+  started-duel:
+    - ''
+    - '&7Um novo duelo iniciou!'
+    - '&7Duelo: &f{inviter} &7vs &f{invited}&7.'
+    - '&7Para assistir, digite &f/duelo camarote&7.'
+    - ''
+  finished-duel:
+    - ''
+    - '&7O duelo foi finalizado!'
+    - '&7O jogador &f{winner} &7derrotou &f{loser}&7!'
+    - '&7Em &f{finish} &7segundos a arena será liberada.'
+    - ''
+  expired-duel:
+    - ''
+    - '&cO jogador {invited} não aceitou o convite de duelo!'
+    - ''
+  refused-duel:
+    - ''
+    - '&cO jogador {player} recusou o convite de duelo!'
+    - ''
+  player-disconnected:
+    - ''
+    - '&cO convite de duelo foi cancelado!'
+    - '&cO jogador {player} se desconectou do servidor.'
+    - ''
+  myth:
+    - ''
+    - '&7Mito atual: &5[Mito] &f{player}&7!'
+    - ''
+  new-myth:
+    - ''
+    - '&7Novo &5[Mito]&7: &f{player}&7!'
+    - ''
